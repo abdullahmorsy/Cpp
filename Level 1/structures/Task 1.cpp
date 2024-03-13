@@ -21,6 +21,8 @@ int main()
 	float MonthlySalary;
 	gender myGender;
 	status myStatus;
+	myGender = gender::male;
+	myStatus = status::single;
 
 	cout << "Enter ur name\n";
 	cin >> Name;
@@ -32,10 +34,6 @@ int main()
 	cin >> Country;
 	cout << "Enter ur mounthly Salary\n";
 	cin >> MonthlySalary;
-	cout << "Are u or M\n";
-	cin >> myGender;
-	cout << "are U Married\n";
-	cin >> myStatus;
 
 	cout << "******************************\n";
 	cout << "Name: " << Name << endl;
