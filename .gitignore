@@ -361,18 +361,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-.vscode/c_cpp_properties.json
-.vscode/launch.json
-.vscode/settings.json
-.vscode/tasks.json
-Level 1/.vscode/c_cpp_properties.json
-Level 1/.vscode/launch.json
-Level 1/.vscode/settings.json
-Level 1/Arethimetic operations/21-mathFunctions
-Level 1/functions/function
-Level 1/Print/Print
-Level 1/string/readStrings
-Level 1/string/string1
-Level 1/structures/2-enums
-Level 1/structures/dataConversion
-Level 1/structures/Task 1
