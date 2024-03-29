@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 // Global variable ::x to use it in any function
