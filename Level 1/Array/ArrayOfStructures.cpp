@@ -9,6 +9,12 @@ struct strInfo
 	string phone;
 };
 
+void readNoUsers(int &noUser)
+{
+	cout << "Enter the number of persons! ";
+	cin >> noUser;
+}
+
 void readInfo(strInfo &personInfo)
 {
 	cout << "Please enter your first name!\n";
@@ -23,7 +29,6 @@ void readInfo(strInfo &personInfo)
 
 void printInfo(strInfo &personInfo)
 {
-	cout << "*****************************\n";
 	cout << "First name: " << personInfo.firstName << endl;
 	cout << "Last name: " << personInfo.LastName << endl;
 	cout << "Age: " << personInfo.age << endl;
@@ -31,23 +36,32 @@ void printInfo(strInfo &personInfo)
 	cout << "*****************************\n";
 }
 
-void readPersonsInfo(strInfo persons[2])
+void readPersonsInfo(strInfo persons[100], int noUsers)
 {
-	readInfo(persons[0]);
-	readInfo(persons[1]);
+	for (int i = 0; i < noUsers; i++)
+	{
+		cout << "please enter Person's " << i + 1 << " info!\n";
+		readInfo(persons[i]);
+		cout << endl;
+	}
+	cout << "*****************************\n";
 }
 
-void printPersonsInfo(strInfo persons[2])
+void printPersonsInfo(strInfo persons[100], int noUsers)
 {
-	printInfo(persons[0]);
-	printInfo(persons[1]);
+	for (int i = 0; i < noUsers; i++)
+	{
+		printInfo(persons[0]);
+	}
 }
 
 int main()
 {
-	strInfo persons[2];
-	readPersonsInfo(persons);
-	printPersonsInfo(persons);
+	strInfo persons[100];
+	int noUser;
+	readNoUsers(noUser);
+	readPersonsInfo(persons, noUser);
+	printPersonsInfo(persons, noUser);
 
 	return 0;
 }
