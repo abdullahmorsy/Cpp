@@ -12,8 +12,32 @@ void printTableHeader()
     cout << ("\n___________________________________________________________________________________\n");
 }
 
-int main()
+string printColumnSeperator(int i)
+{
+    if (i < 10)
+        return ("   |");
+    else
+        return ("  |");
+}
+
+void printMultiplicationTable()
 {
     printTableHeader();
+    for (int i = 1; i <= 10; i++)
+    {
+        cout << " " << i << printColumnSeperator(i) << ("\t");
+        for (int j = 1; j <= 10; j++)
+        {
+            cout << i * j << ("\t");
+        }
+
+        cout << endl;
+    }
+}
+
+int main()
+{
+    printMultiplicationTable();
+    cout << ("\n");
     return 0;
 }
